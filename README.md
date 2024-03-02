@@ -43,7 +43,9 @@ Usage:
     git clone https://github.com/malikmoaz01/Data-Structures.git
 
     Choose a Data Structure: Navigate to the specific directory corresponding to the data structure you want to explore.
+    
     Compile and Run: Compile the C++ source files using a C++ compiler (e.g., g++) and execute the compiled program to see the data structure in action.
+    
     Explore and Experiment: Modify the code, add new functionalities, or experiment with different inputs to deepen your understanding of the data structure.
 
 Contributions:
