@@ -133,7 +133,7 @@ node* reverse(node* &head)
  		nextptr = current->next;
  		current->next = previous;
  		previous = current;
- 	    current = nextptr;
+ 	        current = nextptr;
 	 }
 	 
 	 return previous;
@@ -234,7 +234,6 @@ void deleteEnd(node* head , int val)
 		return;
 	}
 	
-	//For Head Dlete Zehri Bat ha agr hum ne first Head delete krn ah atou is tarah hi krege
 	
 	if(head->next == NULL)
 	{
