@@ -11,7 +11,7 @@ public class Solution {
             // Agar dono left aur right null hain: Ye situation tab hoti hai jab current level par dono sides me koi node nahi hai.
             if (left == null && right == null) {
                 continue;
-            }
+            }    
             // Yani left subtree mein koi node nahi hai lekin right subtree mein node hai, to tree symmetric nahi hai.
             if (left == null || right == null) {
                 return false;
