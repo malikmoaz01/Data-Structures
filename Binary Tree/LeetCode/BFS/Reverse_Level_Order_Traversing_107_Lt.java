@@ -42,7 +42,8 @@ class Solution {
                 }
             }
 
-            result.add(currentLevel);
+            result.add(0,currentLevel); 
+            // isse har level reverse print huga yani phle niche wale phir upar wale
         }
 
         return result;
