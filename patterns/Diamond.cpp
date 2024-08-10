@@ -9,7 +9,7 @@ int main()
     {
     	for(j = 1; j < n ; j++)
     	{
-    		if(j <= n -i)
+    		if(j <= n - i)
     		{
     			cout<<" ";
 			}

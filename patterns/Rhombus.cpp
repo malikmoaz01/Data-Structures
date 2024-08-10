@@ -20,7 +20,7 @@ int main()
 			
 		}
 		for(int k = 1; k <= n+1-i; ++k)
-		{8
+		{
 			cout<<"*";
 		}
 	    cout<<"\n";
