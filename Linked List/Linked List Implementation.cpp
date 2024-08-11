@@ -133,7 +133,7 @@ node* reverse(node* &head)
  		nextptr = current->next;
  		current->next = previous;
  		previous = current;
- 	        current = nextptr;
+ 	    current = nextptr;
 	 }
 	 
 	 return previous;
@@ -154,7 +154,7 @@ node* reverseknodes(node* &head , int k)
  	    current = nextptr;
  	    count++;
 	 }
-	  if(nextptr != NULL)
+	 if(nextptr != NULL)
 	 head->next = reverseknodes(nextptr,k);
 	 return previous;
 }
