@@ -1,6 +1,11 @@
 #include<iostream>
 using namespace std;
 
+// Simple funda ye ha isme ju prime mil gya oske multiples remove krdu 
+// Yani agr 2 hain tu 4 , 6 , 8 , 10 till 40 tak check krne ki zarorat nhi ha 
+// Time Complexity is O(nloglogn)
+// Space Complexity is O(n) because we take an extra array prime
+
 void sieve(int n, bool* primes)
 {
 	for(int i = 2; i * i <= n; i++)

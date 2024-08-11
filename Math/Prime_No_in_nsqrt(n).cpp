@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
-
+// Time complecity is O(nsqrt(n))
+// Space Complexity is O(1)
 bool prime(int n)
 {
 	int c = 2;
