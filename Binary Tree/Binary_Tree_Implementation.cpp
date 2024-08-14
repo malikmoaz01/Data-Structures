@@ -40,7 +40,7 @@ public:
             return;
         }
 
-        cout << "For left -> (1 for Yes, 0 for No) " << node->value <<  : ";
+        cout << "For left -> (1 for Yes, 0 for No) " << node->value <<  : ;
         bool left;
         cin >> left;
         if(left) {

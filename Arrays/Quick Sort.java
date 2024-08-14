@@ -1,22 +1,36 @@
-public class Main {
-    // Time complexity: O(n^2)
-    // Space complexity: O(1)
-    public static void selectionSort(int[] arr) {
-        int n = arr.length;
-        for (int i = 0; i < n - 1; i++) {
-            int minIndex = i;
-            for (int j = i + 1; j < n; j++) {
-                if (arr[j] < arr[minIndex]) minIndex = j;
-            }
-            int temp = arr[minIndex];
-            arr[minIndex] = arr[i];
-            arr[i] = temp;
+class Solution {
+    public int[] sortArray(int[] nums) {
+        quickSort(nums , 0 , nums.length -  1);
+        return nums;
+    }
+    void quickSort(int[] nums , int low , int high )
+    {
+        if(low < high )
+        {
+            int pivot = partition(nums , low , high );
+            quickSort(nums , low , pivot - 1);
+            quickSort(nums , pivot + 1 , high);
         }
     }
-
-    public static void main(String[] args) {
-        int[] arr = {64, 25, 12, 22, 11};
-        selectionSort(arr);
-        for (int num : arr) System.out.print(num + " ");
+    int partition(int[] nums , int low , int high)
+    {
+        int pivot = nums[high];
+        int i = low - 1;
+        for(int j=low; j<high; j++)
+        {
+            if(nums[j] < pivot )
+            {
+                i++ ;
+                swap(nums , i , j);
+            }
+        }
+        swap(nums , i+1 , high);
+        return i+1;
+    } 
+    void swap(int[] arr , int low , int high  )
+    {
+        int temp = arr[low];
+        arr[low] = arr[high];
+        arr[high] =  temp ;
     }
 }

@@ -15,7 +15,6 @@ public class Solution {
     public boolean isValidBST(TreeNode root) {
         return isValidBST(root, null, null);
     }
-
     private boolean isValidBST(TreeNode node, Integer low, Integer high) {
         if (node == null) {
             return true;

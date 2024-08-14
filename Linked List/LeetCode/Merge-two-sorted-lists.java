@@ -22,7 +22,6 @@ class Solution {
             }
             demo = demo.next;
         }
-
         if (list1 == null) {
             demo.next = list2;
         }
