@@ -18,3 +18,7 @@ public class Main {
         System.out.println(binarySearch(arr, target));
     }
 }
+
+
+
+
