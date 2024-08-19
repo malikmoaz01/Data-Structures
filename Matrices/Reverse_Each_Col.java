@@ -1,21 +1,13 @@
 public class Solution {
 
-    public void rotate(int[][] matrix) {
+    public void reverseColumns(int[][] matrix) {
         int n = matrix.length;
 
-        for (int i = 0; i < n; i++) {
-            for (int j = i; j < n; j++) {
+        for (int j = 0; j < n; j++) {
+            for (int i = 0; i < n / 2; i++) {
                 int temp = matrix[i][j];
-                matrix[i][j] = matrix[j][i];
-                matrix[j][i] = temp;
-            }
-        }
-
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n / 2; j++) {
-                int temp = matrix[i][j];
-                matrix[i][j] = matrix[i][n - 1 - j];
-                matrix[i][n - 1 - j] = temp;
+                matrix[i][j] = matrix[n - 1 - i][j];
+                matrix[n - 1 - i][j] = temp;
             }
         }
     }
@@ -41,9 +33,9 @@ public class Solution {
         System.out.println("Original matrix:");
         solution.printMatrix(matrix);
 
-        solution.rotate(matrix);
+        solution.reverseColumns(matrix);
 
-        System.out.println("\nRotated matrix:");
+        System.out.println("\nMatrix after reversing columns:");
         solution.printMatrix(matrix);
     }
 }

@@ -1,15 +1,7 @@
 public class Solution {
 
-    public void rotate(int[][] matrix) {
+    public void reverseRows(int[][] matrix) {
         int n = matrix.length;
-
-        for (int i = 0; i < n; i++) {
-            for (int j = i; j < n; j++) {
-                int temp = matrix[i][j];
-                matrix[i][j] = matrix[j][i];
-                matrix[j][i] = temp;
-            }
-        }
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n / 2; j++) {
@@ -41,9 +33,9 @@ public class Solution {
         System.out.println("Original matrix:");
         solution.printMatrix(matrix);
 
-        solution.rotate(matrix);
+        solution.reverseRows(matrix);
 
-        System.out.println("\nRotated matrix:");
+        System.out.println("\nMatrix after reversing rows:");
         solution.printMatrix(matrix);
     }
 }
