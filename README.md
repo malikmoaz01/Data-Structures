@@ -1,5 +1,4 @@
-"# Data-Structures-In-C-" 
-
+*Data Structures in Java & C++*
 Introduction:
 Data Structures play a fundamental role in computer science and programming, providing efficient ways to store, organize, and manipulate data. This repository contains implementations of various data structures in C++, along with explanations and examples to demonstrate their usage and benefits.
 
