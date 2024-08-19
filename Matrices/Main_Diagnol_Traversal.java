@@ -4,7 +4,7 @@ public class Main_Diagnol_Traversal {
         int rows = matrix.length;
         int cols = matrix[0].length;
         
-        for(int i=0; i<rows; i++)
+    for(int i=0; i<rows; i++)
         {
             int a = i;
             int b = 0 ;
@@ -15,6 +15,7 @@ public class Main_Diagnol_Traversal {
                 b++;
             }
         }
+
         for(int i=1; i<cols; i++)
         {
             int a = rows-1;
