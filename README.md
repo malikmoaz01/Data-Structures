@@ -4,7 +4,7 @@ Welcome to my **DSA** repository! This repo contains a collection of solutions a
 
 ## Repository Contents
 
-- **[CSES for Competition](#)**: Solutions to various CSES problem sets. Updated frequently with new problems and solutions.
+- **[CSES for Competition](https://github.com/malikmoaz01/Data-Structures/tree/main/CSES%20Problems%20Solution)**: Solutions to various CSES problem sets. Updated frequently with new problems and solutions.
 - **[DSA Sheet by Mam Sharadha ](#)**: Comprehensive collection of problems and solutions categorized by data structures and algorithms.
 - **[Code.zip](#)**: This is manual code if there is an issue to download the github repo.
 
@@ -23,7 +23,7 @@ Welcome to my **DSA** repository! This repo contains a collection of solutions a
 11. **Linked List**: Linked list problems and solutions.
 12. **Stack**: Stack-based problems.
 13. **Queue**: Queue-related problems.
-
+14. **Graphs**: Graph related problems 
 ## How to Use
 
 1. Clone the repository using:
