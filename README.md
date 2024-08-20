@@ -50,4 +50,8 @@ Welcome to my **DSA** repository! This repo contains a collection of solutions a
 
 **Contributing**
 
-Feel free to explore and contribute to the repository. If you have any suggestions or improvements, don't hesitate to open an issue or submit a pull request **mlkmoaz01@gmail.com** !
+Feel free to explore and contribute to the repository. If you have any suggestions or improvements, don't hesitate to open an issue or submit a pull request !!
+
+## Email : **mlkmoaz01@gmail.com**
+
+**Happy Coding**
