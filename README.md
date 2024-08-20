@@ -7,7 +7,7 @@ Welcome to my **DSA** repository! This repo contains a collection of solutions a
 - **[CSES for Competition](https://cses.fi/problemset)**: Solutions to various CSES problem sets. Updated frequently with new problems and solutions.
 - **[DSA Sheet by Mam Sharadha ](https://docs.google.com/spreadsheets/u/0/d/1hXserPuxVoWMG9Hs7y8wVdRCJTcj3xMBAEYUOXQ5Xag/htmlview?pli=1#)**: Comprehensive collection of problems and solutions categorized by data structures and algorithms.
 - **[Code.zip](https://github.com/malikmoaz01/Data-Structures/blob/main/Code.zip)**: This is manual code if there is an issue to download the github repo.
-
+- **[LeetCode](https://leetcode.com/u/mlkmoaz01/)**: There are many solutions of LeetCode problem with main code 
 ## Categories
 
 1. **Arrays**: Array-based problems and solutions.
