@@ -10,7 +10,7 @@ class Print_Hollow_Matrix {
         int cols = matrix[0].length;
         int max = matrix[0][0];
         int max2 = 0;
-        for(int i=0; i<rows; i++)
+        for(int i=0; i<rows; i++) 
         {
             for(int j=0; j<cols; j++)
             {
