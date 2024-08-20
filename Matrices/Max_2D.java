@@ -9,16 +9,22 @@ class Print_Hollow_Matrix {
         int rows = matrix.length;
         int cols = matrix[0].length;
         int max = matrix[0][0];
+        int max2 = 0;
         for(int i=0; i<rows; i++)
         {
-            for(int j=0; i<cols; j++)
+            for(int j=0; j<cols; j++)
             {
                 if(max < matrix[i][j])
                 {
+                    max2 = max;
                     max = matrix[i][j];
+                }else if(max2 < matrix[i][j] && max > matrix[i][j])
+                {
+                    max2 = matrix[i][j] ;
                 }
             }
         }
-        cout<<max;
+        System.out.println(max);
+        System.out.println(max2);
     }
 }
