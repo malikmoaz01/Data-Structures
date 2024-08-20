@@ -20,7 +20,7 @@ class Print_Hollow_Matrix {
                     max = matrix[i][j];
                 }else if(max2 < matrix[i][j] && max > matrix[i][j])
                 {
-                    max2 = matrix[i][j] ;
+                    max2 = matrix[i][j];
                 }
             }
         }
