@@ -1,5 +1,5 @@
 public class Solution {
-    public static void rotateMatrix(int m, int n, int[][] mat) {
+    public static void otateMatrix_ClockWise_ByOneStep(int m, int n, int[][] mat) {
         int row = 0, col = 0;
         int prev, curr;
 
@@ -57,6 +57,6 @@ public class Solution {
             {13, 14, 15, 16}
         };
 
-        rotateMatrix(a.length, a[0].length, a);
+        rotateMatrix_ClockWise_ByOneStep(a.length, a[0].length, a);
     }
 }
