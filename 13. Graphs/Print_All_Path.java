@@ -33,24 +33,32 @@ public class Print_All_Path {
         graph[6].add(new Edge(6, 5));
     }
 
-    public static void Print_All_Path(ArrayList<Edge> graph[], int current , boolean visited[]) {
-        if(visited[current])
-        {
-            return ;
+    public static void Print_All_Path(ArrayList<Edge> graph[], int current, boolean visited[], int target, String path) {
+        if (current == target) {
+            System.out.println(path);
+            return;
         }
-        System.out.println(current);
-        visited[current] == true;
-        for(int i=0; i<graph[current].length; i++)
-        {
+
+        for (int i = 0; i < graph[current].size(); i++) {
             Edge e = graph[current].get(i);
-            Print_All_Path(graph,e.dest,visited);
+            if (!visited[e.dest]) {
+                visited[e.dest] = true;
+                Print_All_Path(graph, e.dest, visited, target, path + " -- " + e.dest);
+                visited[e.dest] = false;
+            }
         }
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         int V = 7;
         ArrayList<Edge> graph[] = new ArrayList[V];
         createGraph(graph);
-        Print_All_Path(graph, V);
+
+        int source = 0;
+        int target = 6;
+
+        boolean visited[] = new boolean[V];
+        visited[source] = true;
+        Print_All_Path(graph, source, visited, target, "" + source);
     }
 }
