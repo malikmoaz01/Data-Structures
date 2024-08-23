@@ -45,7 +45,7 @@ public class Dijkstra_Algo {
         PriorityQueue<Pair> pq = new PriorityQueue<>();
         int[] dist = new int[graph.length];
         boolean[] visited = new boolean[graph.length];
-        int[] pred = new int[graph.length];  // Declare pred array
+        int[] pred = new int[graph.length];  
 
         Arrays.fill(dist, Integer.MAX_VALUE); 
         Arrays.fill(pred, -1);
