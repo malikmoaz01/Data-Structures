@@ -45,33 +45,41 @@ public class PrimsAlgorithm {
     }
 
     public static void primAlgo(ArrayList<Edge> graph[]) {
-        PriorityQueue<Integer> pq = new PriorityQueue<>();
+        PriorityQueue<Pair> pq = new PriorityQueue<>();
         boolean[] visited = new boolean[graph.length];
+        int[] parent = new int[graph.length];  
+        Arrays.fill(parent, -1);
+
         pq.add(new Pair(0, 0));
         int cost = 0;
-        while(!pq.isEmpty())
-        {
+
+        while (!pq.isEmpty()) {
             Pair current = pq.poll();
-            if(!visited[current.node])
-            {
+            if (!visited[current.node]) {
                 visited[current.node] = true;
                 cost += current.wt;
-                for(Edge e : graph[current.node].length)
-                {
-                    if(!visited[e.dest])
-                    {
-                        pq.add(new Pair(e.dest , e.wt));
+
+                for (Edge e : graph[current.node]) {
+                    if (!visited[e.dest] && (parent[e.dest] == -1 || e.wt < pq.peek().wt)) {
+                        pq.add(new Pair(e.dest, e.wt));
+                        parent[e.dest] = current.node;
                     }
                 }
             }
         }
-        System.out.println(cost);
+
+        System.out.println("Total cost of Minimum Spanning Tree: " + cost);
+        System.out.println("Minimum Spanning Tree Paths:");
+        for (int i = 1; i < graph.length; i++) { 
+            System.out.println("Edge: " + parent[i] + " - " + i);
+        }
     }
 
     public static void main(String args[]) {
         int V = 4;
         ArrayList<Edge> graph[] = new ArrayList[V];
         createGraph(graph);
+
         primAlgo(graph);
     }
 }
