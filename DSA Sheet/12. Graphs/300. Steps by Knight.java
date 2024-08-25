@@ -65,7 +65,18 @@ public class KnightMoves {
 }
 
 /*
-Kaise kaam karta hai (Roman Urdu):
+
+If a knight is on a position (x, y), it can move to any of the following positions (as long as they are within the bounds of the chessboard):
+
+(x + 2, y + 1)
+(x + 2, y - 1)
+(x - 2, y + 1)
+(x - 2, y - 1)
+(x + 1, y + 2)
+(x + 1, y - 2)
+(x - 1, y + 2)
+(x - 1, y - 2)
+
 
 1. Pehle, Cell class banti hai jo chessboard ki aik position ko represent karti hai. Iske andar x aur y coordinates hote hain aur knight ke us position tak pohanchne ke liye kitni moves lagi, yeh distance (dist) ke zariye track kiya jata hai.
 
