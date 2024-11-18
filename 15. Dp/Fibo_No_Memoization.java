@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-class Solution {
+class Fibo_No_Memoization {
     public int fib(int n) {
         if (n <= 1) {
             return n;
@@ -16,8 +16,8 @@ class Solution {
     }
 
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        Fibo_No_Memoization Fibo_No_Memoization = new Fibo_No_Memoization();
         int n = 10; 
-        System.out.println("Fibonacci number at position " + n + " is: " + solution.fib(n));
+        System.out.println("Fibonacci number at position " + n + " is: " + Fibo_No_Memoization.fib(n));
     }
 }
