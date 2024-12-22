@@ -1,3 +1,11 @@
+
+// Problem Statement 
+
+// You are given a positive number  N, which can be up to 19 digits long (long type in Java). 
+// Your task is to rearrange the digits of N to form the largest possible number. 
+// This largest number represents the maximum "salary" 
+// you can generate by rearranging the digits optimally.
+
 import java.util.ArrayList;
 import java.util.Collections;
 
