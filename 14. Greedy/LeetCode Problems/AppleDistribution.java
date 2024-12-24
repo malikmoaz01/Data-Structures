@@ -16,8 +16,7 @@ public class AppleDistribution {
             i--;
         }
         return no_boxes;
-    }
-
+    }    
     public static void main(String[] args) {
         AppleDistribution obj = new AppleDistribution();
         int[] apple = {5, 3, 8, 6};
