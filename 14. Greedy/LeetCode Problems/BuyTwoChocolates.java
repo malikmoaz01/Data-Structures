@@ -17,7 +17,7 @@ public class BuyTwoChocolates {
             return money;
         }
     }
-     
+
     public static void main(String[] args) {
         BuyTwoChocolates obj = new BuyTwoChocolates();
         int[] prices = {5, 3, 8, 6};
