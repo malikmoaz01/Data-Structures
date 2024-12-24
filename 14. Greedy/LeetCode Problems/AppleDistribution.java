@@ -15,7 +15,6 @@ public class AppleDistribution {
                 break;
             i--;
         }
-
         return no_boxes;
     }
 
