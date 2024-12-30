@@ -1,3 +1,3 @@
-public class 01KnapScak {
+public class 01KnapSack {
     
 }
