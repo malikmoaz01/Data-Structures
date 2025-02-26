@@ -1,4 +1,4 @@
-public class Equal01Subarrays {
+public class Count_SubArray_0_1 {
 
     public static int countSubarrays(int[] arr) {
         int n = arr.length;

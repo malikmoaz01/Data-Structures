@@ -1,4 +1,4 @@
-public class MaxSubArraySum {
+public class Maximum_SubArray_Sum {
 
     public static int maxSubArraySum(int[] a) {
         int max_so_far = Integer.MIN_VALUE;

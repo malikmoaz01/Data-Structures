@@ -1,4 +1,4 @@
-public class Main {
+public class Binary_Search {
     // Time complexity: O(log n)
     // Space complexity: O(1)
     public static int binarySearch(int[] arr, int target) {

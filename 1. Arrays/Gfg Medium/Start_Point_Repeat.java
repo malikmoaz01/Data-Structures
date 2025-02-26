@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class startpoint {
+public class Start_Point_Repeat {
     public static void main(String[] args) {
         int[] arr = {6, 10, 5, 4, 9, 120, 4, 6, 10};
         int size = arr.length;

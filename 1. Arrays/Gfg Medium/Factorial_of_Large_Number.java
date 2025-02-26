@@ -1,7 +1,7 @@
 import java.math.BigInteger;
 import java.util.Scanner;
 
-public class LargeFactorial {
+public class Factorial_of_Large_Number {
 
     public static BigInteger factorial(int n) {
         BigInteger result = BigInteger.ONE; 

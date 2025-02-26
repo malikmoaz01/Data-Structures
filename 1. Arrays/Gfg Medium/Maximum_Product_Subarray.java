@@ -1,4 +1,4 @@
-public class MaxProductSubArray {
+public class Maximum_Product_Subarray {
 
     public static int maxProductSubArray(int[] a) {
         int max_so_far = a[0];

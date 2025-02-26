@@ -1,10 +1,10 @@
-public class Trapping_rain_Water {
+public class  Trapping_Rain_Water {
 
-    public static int Trapping_rain_Waterr(int[] a) {
+    public static int trap(int[] arr) {
         int sum = 0;
-        for(int i=0; i<a.length; i++)
+        for(int i=0; i<arr.length; i++)
         {
-            for(int j=i+1; j<a.length; j++)
+            for(int j=i+1; j<arr.length; j++)
             {
                 if(arr[i] > arr[j+1])
                 {
@@ -18,10 +18,11 @@ public class Trapping_rain_Water {
             }
             break;
         }
+        return sum;
     }
 
     public static void main(String[] args) {
         int[] a = {3, 0, 1, 0, 4, 0, 2};
-        System.out.println("Total Water is " + Trapping_rain_Waterr(a));
+        System.out.println("Total Water is " + trap(a));
     }
 }
